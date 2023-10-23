@@ -10,6 +10,8 @@ import Login from './Login';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Product from './Product';
 import Label from './Label';
+import Controlled from './Controlled';
+import Uncontrolled from './Uncontrolled';
 function App() {
   return (
     <div className="App">
@@ -29,8 +31,8 @@ function App() {
         <Route path='Greet' element={<Greet/>}></Route>
     </Routes>
   </BrowserRouter>
-     <Label/>
-
+     <Controlled/>
+    <Uncontrolled/>
     </div>
   );
 }
